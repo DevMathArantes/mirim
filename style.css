@@ -1,0 +1,36 @@
+/*Estilos importados*/
+@import url('Styles/imprimir.css');
+@import url('Styles/header.css');
+
+/*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*Variáveis*/
+:root{
+    --cor1: #e6e6e6;
+    --cor2: #ee4848;
+    --cor3: #ffffff;
+    --fontPadrao: "Rubik", serif;
+    --fontTitulo: "Ubuntu", serif;
+}
+
+/*Regras*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--fontTitulo);
+}
+a{
+    font-family: var(--fontTitulo);
+    text-decoration: none;
+}
