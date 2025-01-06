@@ -34,3 +34,11 @@ a{
     font-family: var(--fontTitulo);
     text-decoration: none;
 }
+p, label{
+    font-family: var(--fontPadrao);
+}
+span{
+    font-family: var(--fontTitulo);
+}
+
+/*Curingas*/

@@ -1049,260 +1049,243 @@ let Pagina24 = [
 
 
 //Funções curinga
-function get(id){
-    return document.getElementById(id);
+
+    function get(id){
+        return document.getElementById(id);
+    }
+
+//Funções auxiliares
+
+    //Define a lista dentro de outra função
+    function definirPagina(numero){
+        let pag;
+        switch(numero){
+            case 1:
+                pag = Pagina1;
+                return pag;
+            case 2:
+                pag = Pagina2;
+                return pag;
+
+            case 3:
+                pag = Pagina3;
+                return pag;
+
+            case 4:
+                pag = Pagina4;
+                return pag;
+
+            case 5:
+                pag = Pagina5;
+                return pag;
+
+            case 6:
+                pag = Pagina6;
+                return pag;
+
+            case 7:
+                pag = Pagina7;
+                return pag;
+
+            case 8:
+                pag = Pagina8;
+                return pag;
+
+            case 9:
+                pag = Pagina9;
+                return pag;
+
+            case 10:
+                pag = Pagina10;
+                return pag;
+
+            case 11:
+                pag = Pagina11;
+                return pag;
+
+            case 12:
+                pag = Pagina12;
+                return pag;
+
+            case 13:
+                pag = Pagina13;
+                return pag;
+
+            case 14:
+                pag = Pagina14;
+                return pag;
+
+            case 15:
+                pag = Pagina15;
+                return pag;
+
+            case 16:
+                pag = Pagina16;
+                return pag;
+
+            case 17:
+                pag = Pagina17;
+                return pag;
+
+            case 18:
+                pag = Pagina18;
+                return pag;
+
+            case 19:
+                pag = Pagina19;
+                return pag;
+
+            case 20:
+                pag = Pagina20;
+                return pag;
+
+            case 21:
+                pag = Pagina21;
+                return pag;
+
+            case 22:
+                pag = Pagina22;
+                return pag;
+
+            case 23:
+                pag = Pagina23;
+                return pag;
+
+            case 24:
+                pag = Pagina24;
+                return pag;
+        }
+    }
+
+//Funções principais
+function chamar3(){
+    for(let i = 1; i <= 3; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
+}
+function chamar6(){
+    for(let i = 4; i <= 6; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
+}
+function chamar9(){
+    for(let i = 7; i <= 9; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
+}
+function chamar12(){
+    for(let i = 10; i <= 12; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
+}
+function chamar15(){
+    for(let i = 13; i <= 15; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
+}
+function chamar18(){
+    for(let i = 16; i <= 18; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
+}
+function chamar21(){
+    for(let i = 19; i <= 21; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
+}
+function chamar24(){
+    for(let i = 22; i <= 24; i++){
+        let pagina = definirPagina(i);
+        for(let j = 0; j < pagina.length; j++){
+            let produto = pagina[j];
+            get('listaImprimir').innerHTML+=`
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0,5)}</span>
+                </li>
+            `;
+        }
+    }
 }
 
 //Script Geral
 
-for(let i = 0; i < Pagina1.length; i++){
-    let produto = Pagina1[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP1/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-for(let i = 0; i < Pagina2.length; i++){
-    let produto = Pagina2[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP2/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina3.length; i++){
-    let produto = Pagina3[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP3/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina4.length; i++){
-    let produto = Pagina4[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP4/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina5.length; i++){
-    let produto = Pagina5[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP5/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina6.length; i++){
-    let produto = Pagina6[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP6/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina7.length; i++){
-    let produto = Pagina7[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP7/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina8.length; i++){
-    let produto = Pagina8[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP8/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina9.length; i++){
-    let produto = Pagina9[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP9/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina10.length; i++){
-    let produto = Pagina10[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP10/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina11.length; i++){
-    let produto = Pagina11[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP11/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina12.length; i++){
-    let produto = Pagina12[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP12/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-for(let i = 0; i < Pagina13.length; i++){
-    let produto = Pagina13[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP13/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-} 
-
-for(let i = 0; i < Pagina14.length; i++){
-    let produto = Pagina14[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP14/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina15.length; i++){
-    let produto = Pagina15[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP15/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina16.length; i++){
-    let produto = Pagina16[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP16/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina17.length; i++){
-    let produto = Pagina17[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP17/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina18.length; i++){
-    let produto = Pagina18[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP18/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina19.length; i++){
-    let produto = Pagina19[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP19/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina20.length; i++){
-    let produto = Pagina20[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP20/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina21.length; i++){
-    let produto = Pagina21[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP21/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina22.length; i++){
-    let produto = Pagina22[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP22/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina23.length; i++){
-    let produto = Pagina23[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP23/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
-
-for(let i = 0; i < Pagina24.length; i++){
-    let produto = Pagina24[i];
-    get('listaImprimir').innerHTML+=`
-        <li>
-            <img src="../Assets/ProdutosP24/p${i}.jpg" alt="produto">
-            <h3>${produto.slice(6)}</h3>
-            <span>${produto.slice(0,5)}</span>
-        </li>
-    `
-}
+chamar3();
+setTimeout(chamar6(), 3000);
+setTimeout(chamar9(), 6000);
+setTimeout(chamar12(), 9000);
+setTimeout(chamar15(), 12000);
+setTimeout(chamar18(), 15000);
+setTimeout(chamar21(), 18000);
+setTimeout(chamar24(), 21000);
