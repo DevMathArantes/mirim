@@ -1282,10 +1282,10 @@ function chamar24(){
 //Script Geral
 
 chamar3();
-setTimeout(chamar6(), 3000);
-setTimeout(chamar9(), 6000);
-setTimeout(chamar12(), 9000);
-setTimeout(chamar15(), 12000);
-setTimeout(chamar18(), 15000);
-setTimeout(chamar21(), 18000);
-setTimeout(chamar24(), 21000);
+setTimeout(chamar6(), 1000);
+setTimeout(chamar9(), 2000);
+setTimeout(chamar12(), 3000);
+setTimeout(chamar15(), 4000);
+setTimeout(chamar18(), 5000);
+setTimeout(chamar21(), 6000);
+setTimeout(chamar24(), 7000);
