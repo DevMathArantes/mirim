@@ -837,7 +837,7 @@ let Pagina19 = [
 ];
 
 let Pagina20 = [
-    "14141 PIRULITO DIPLOKO FRUTAS VERM. 1X15UN/CX", 
+    "14141 PIRULITO DIPLOKO FRUTAS VERM. 1X15UN/CX",
     "18631 PIRULITO DIPLOKO MOLA BOOOM SORTIDO 30X12GR /CX",
     "1234 PIRULITO DIPLOKO MORANGO 1X15UN/CX",
     "18609 PIRULITO DIPLOKO NEON CAVEIRA 30X10GR /CX",
@@ -854,9 +854,9 @@ let Pagina20 = [
     "18585 PIRULITO MIGUELITO PSIC. MEGA C/20 /CX",
     "19209 PIRULITO POP LETTER F. VERMELHAS 24X14GR/CX",
     "19207 PIRULITO POP LETTER MORANGO 24X14GR/CX",
-    "19205 PIRULITO POP LETTER UVA 24X14GR/CX", 
-    "15368 PIRULITO POP M.MAXXI ENERGY 12X24UN/PC", 
-    "18787 PIRULITO POP M.MAXXI FRAMB. P. LINGUA AZUL 12X24UN/PC", 
+    "19205 PIRULITO POP LETTER UVA 24X14GR/CX",
+    "15368 PIRULITO POP M.MAXXI ENERGY 12X24UN/PC",
+    "18787 PIRULITO POP M.MAXXI FRAMB. P. LINGUA AZUL 12X24UN/PC",
     "19331 PIRULITO POP M.MAXXI MACA VERDE 12X24UN/PC ",
     "18789 PIRULITO POP M.MAXXI MAXXI MORANGO 12X24UN/PC ",
     "18785 PIRULITO POP M.MAXXI P. LINGUA PRETO 12X24UN/PC ",
@@ -1050,242 +1050,155 @@ let Pagina24 = [
 
 //Funções curinga
 
-    function get(id){
-        return document.getElementById(id);
-    }
+function get(id) {
+    return document.getElementById(id);
+}
 
 //Funções auxiliares
 
-    //Define a lista dentro de outra função
-    function definirPagina(numero){
-        let pag;
-        switch(numero){
-            case 1:
-                pag = Pagina1;
-                return pag;
-            case 2:
-                pag = Pagina2;
-                return pag;
+//Define a lista dentro de outra função
+function definirPagina(numero) {
+    let pag;
+    switch (numero) {
+        case 1:
+            pag = Pagina1;
+            return pag;
+        case 2:
+            pag = Pagina2;
+            return pag;
 
-            case 3:
-                pag = Pagina3;
-                return pag;
+        case 3:
+            pag = Pagina3;
+            return pag;
 
-            case 4:
-                pag = Pagina4;
-                return pag;
+        case 4:
+            pag = Pagina4;
+            return pag;
 
-            case 5:
-                pag = Pagina5;
-                return pag;
+        case 5:
+            pag = Pagina5;
+            return pag;
 
-            case 6:
-                pag = Pagina6;
-                return pag;
+        case 6:
+            pag = Pagina6;
+            return pag;
 
-            case 7:
-                pag = Pagina7;
-                return pag;
+        case 7:
+            pag = Pagina7;
+            return pag;
 
-            case 8:
-                pag = Pagina8;
-                return pag;
+        case 8:
+            pag = Pagina8;
+            return pag;
 
-            case 9:
-                pag = Pagina9;
-                return pag;
+        case 9:
+            pag = Pagina9;
+            return pag;
 
-            case 10:
-                pag = Pagina10;
-                return pag;
+        case 10:
+            pag = Pagina10;
+            return pag;
 
-            case 11:
-                pag = Pagina11;
-                return pag;
+        case 11:
+            pag = Pagina11;
+            return pag;
 
-            case 12:
-                pag = Pagina12;
-                return pag;
+        case 12:
+            pag = Pagina12;
+            return pag;
 
-            case 13:
-                pag = Pagina13;
-                return pag;
+        case 13:
+            pag = Pagina13;
+            return pag;
 
-            case 14:
-                pag = Pagina14;
-                return pag;
+        case 14:
+            pag = Pagina14;
+            return pag;
 
-            case 15:
-                pag = Pagina15;
-                return pag;
+        case 15:
+            pag = Pagina15;
+            return pag;
 
-            case 16:
-                pag = Pagina16;
-                return pag;
+        case 16:
+            pag = Pagina16;
+            return pag;
 
-            case 17:
-                pag = Pagina17;
-                return pag;
+        case 17:
+            pag = Pagina17;
+            return pag;
 
-            case 18:
-                pag = Pagina18;
-                return pag;
+        case 18:
+            pag = Pagina18;
+            return pag;
 
-            case 19:
-                pag = Pagina19;
-                return pag;
+        case 19:
+            pag = Pagina19;
+            return pag;
 
-            case 20:
-                pag = Pagina20;
-                return pag;
+        case 20:
+            pag = Pagina20;
+            return pag;
 
-            case 21:
-                pag = Pagina21;
-                return pag;
+        case 21:
+            pag = Pagina21;
+            return pag;
 
-            case 22:
-                pag = Pagina22;
-                return pag;
+        case 22:
+            pag = Pagina22;
+            return pag;
 
-            case 23:
-                pag = Pagina23;
-                return pag;
+        case 23:
+            pag = Pagina23;
+            return pag;
 
-            case 24:
-                pag = Pagina24;
-                return pag;
-        }
+        case 24:
+            pag = Pagina24;
+            return pag;
     }
+}
 
 //Funções principais
-function chamar3(){
-    for(let i = 1; i <= 3; i++){
+let run = 0;
+
+/*function montarLista(min,max, identificador){
+    for(let i = min; i <= max; i++){
         let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
+        for (let j = 0; j < pagina.length; j++) {
             let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
+            get('lista'+identificador).innerHTML += `
+                    <li>
+                        <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                        <h3>${produto.slice(6)}</h3>
+                        <span>${produto.slice(0, 5)}</span>
+                    </li>
+                `;
         }
     }
+    
 }
-function chamar6(){
-    for(let i = 4; i <= 6; i++){
-        let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
-            let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
-        }
-    }
-}
-function chamar9(){
-    for(let i = 7; i <= 9; i++){
-        let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
-            let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
-        }
-    }
-}
-function chamar12(){
-    for(let i = 10; i <= 12; i++){
-        let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
-            let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
-        }
-    }
-}
-function chamar15(){
-    for(let i = 13; i <= 15; i++){
-        let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
-            let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
-        }
-    }
-}
-function chamar18(){
-    for(let i = 16; i <= 18; i++){
-        let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
-            let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
-        }
-    }
-}
-function chamar21(){
-    for(let i = 19; i <= 21; i++){
-        let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
-            let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
-        }
-    }
-}
-function chamar24(){
-    for(let i = 22; i <= 24; i++){
-        let pagina = definirPagina(i);
-        for(let j = 0; j < pagina.length; j++){
-            let produto = pagina[j];
-            get('listaImprimir').innerHTML+=`
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0,5)}</span>
-                </li>
-            `;
-        }
-    }
-}
+
 
 //Script Geral
 
-chamar3();
-setTimeout(chamar6(), 1000);
-setTimeout(chamar9(), 2000);
-setTimeout(chamar12(), 3000);
-setTimeout(chamar15(), 4000);
-setTimeout(chamar18(), 5000);
-setTimeout(chamar21(), 6000);
-setTimeout(chamar24(), 7000);
+let minimo = 1;
+let maximo = 6;
+for(let x = 1; x <= 4; x++){
+    montarLista(minimo, maximo, x)
+    minimo += 6;
+    maximo += 6;
+}*/
+for(let i = 1; i <= 6; i++){
+    let pagina = definirPagina(i);
+    for (let j = 0; j < pagina.length; j++) {
+        let produto = pagina[j];
+        get('lista1').innerHTML += `
+                <li>
+                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                    <h3>${produto.slice(6)}</h3>
+                    <span>${produto.slice(0, 5)}</span>
+                </li>
+            `;
+    }
+
+}
+       

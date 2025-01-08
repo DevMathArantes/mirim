@@ -42,3 +42,6 @@ span{
 }
 
 /*Curingas*/
+.abrirLista:checked ~ .listaEscondida{
+    display: flex;
+}
