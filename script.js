@@ -1158,47 +1158,71 @@ function definirPagina(numero) {
 }
 
 //Funções principais
-let run = 0;
+function gerarCatalogo(pagina){
+    switch(pagina){
+        case 1:
+            for(let i = 1; i <= 6; i++){
+                let pagina = definirPagina(i);
+                for (let j = 0; j < pagina.length; j++) {
+                    let produto = pagina[j];
+                    get('lista1').innerHTML += `
+                        <li>
+                            <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                            <h3>${produto.slice(6)}</h3>
+                            <span>${produto.slice(0, 5)}</span>
+                        </li>
+                    `;
+                }
+            }
+            break;
 
-/*function montarLista(min,max, identificador){
-    for(let i = min; i <= max; i++){
-        let pagina = definirPagina(i);
-        for (let j = 0; j < pagina.length; j++) {
-            let produto = pagina[j];
-            get('lista'+identificador).innerHTML += `
-                    <li>
-                        <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                        <h3>${produto.slice(6)}</h3>
-                        <span>${produto.slice(0, 5)}</span>
-                    </li>
-                `;
-        }
+        case 2:
+            for(let i = 7; i <= 12; i++){
+                let pagina = definirPagina(i);
+                for (let j = 0; j < pagina.length; j++) {
+                    let produto = pagina[j];
+                    get('lista2').innerHTML += `
+                        <li>
+                            <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                            <h3>${produto.slice(6)}</h3>
+                            <span>${produto.slice(0, 5)}</span>
+                        </li>
+                    `;
+                }
+            }
+            break;
+
+        case 3:
+            for(let i = 13; i <= 18; i++){
+                let pagina = definirPagina(i);
+                for (let j = 0; j < pagina.length; j++) {
+                    let produto = pagina[j];
+                    get('lista3').innerHTML += `
+                        <li>
+                            <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                            <h3>${produto.slice(6)}</h3>
+                            <span>${produto.slice(0, 5)}</span>
+                        </li>
+                    `;
+                }
+            }
+            break;
+
+        case 4:
+            for(let i = 19; i <= 24; i++){
+                let pagina = definirPagina(i);
+                for (let j = 0; j < pagina.length; j++) {
+                    let produto = pagina[j];
+                    get('lista4').innerHTML += `
+                        <li>
+                            <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                            <h3>${produto.slice(6)}</h3>
+                            <span>${produto.slice(0, 5)}</span>
+                        </li>
+                    `;
+                }
+            }
+            break;
     }
-    
+    get('inicioCatalogo'+pagina).style.display='none';
 }
-
-
-//Script Geral
-
-let minimo = 1;
-let maximo = 6;
-for(let x = 1; x <= 4; x++){
-    montarLista(minimo, maximo, x)
-    minimo += 6;
-    maximo += 6;
-}*/
-for(let i = 1; i <= 6; i++){
-    let pagina = definirPagina(i);
-    for (let j = 0; j < pagina.length; j++) {
-        let produto = pagina[j];
-        get('lista1').innerHTML += `
-                <li>
-                    <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                    <h3>${produto.slice(6)}</h3>
-                    <span>${produto.slice(0, 5)}</span>
-                </li>
-            `;
-    }
-
-}
-       

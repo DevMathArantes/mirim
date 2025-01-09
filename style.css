@@ -9,7 +9,7 @@
 /*Variáveis*/
 :root{
     --cor1: #e6e6e6;
-    --cor2: #ee4848;
+    --cor2: #ee2929;
     --cor3: #ffffff;
     --fontPadrao: "Rubik", serif;
     --fontTitulo: "Ubuntu", serif;
@@ -40,6 +40,7 @@ p, label{
 span{
     font-family: var(--fontTitulo);
 }
+
 
 /*Curingas*/
 .abrirLista:checked ~ .listaEscondida{
