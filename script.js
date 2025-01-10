@@ -1226,3 +1226,18 @@ function gerarCatalogo(pagina){
     }
     get('inicioCatalogo'+pagina).style.display='none';
 }
+
+
+for(let i =7; i <= 12; i++){
+    let pagina = definirPagina(i);
+    for (let j = 0; j < pagina.length; j++) {
+        let produto = pagina[j];
+        get('teste').innerHTML += `
+            <li>
+                <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
+                <h3>${produto.slice(6)}</h3>
+                <span>${produto.slice(0, 5)}</span>
+            </li>
+        `;
+    }
+}
