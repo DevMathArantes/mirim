@@ -1227,8 +1227,8 @@ function gerarCatalogo(pagina){
     get('inicioCatalogo'+pagina).style.display='none';
 }
 
-
-for(let i =7; i <= 12; i++){
+/*
+for(let i =19; i <= 24; i++){
     let pagina = definirPagina(i);
     for (let j = 0; j < pagina.length; j++) {
         let produto = pagina[j];
@@ -1241,3 +1241,4 @@ for(let i =7; i <= 12; i++){
         `;
     }
 }
+*/
