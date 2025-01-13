@@ -839,12 +839,12 @@ let Pagina19 = [
 let Pagina20 = [
     "14141 PIRULITO DIPLOKO FRUTAS VERM. 1X15UN/CX",
     "18631 PIRULITO DIPLOKO MOLA BOOOM SORTIDO 30X12GR /CX",
-    "1234 PIRULITO DIPLOKO MORANGO 1X15UN/CX",
+    "01234 PIRULITO DIPLOKO MORANGO 1X15UN/CX",
     "18609 PIRULITO DIPLOKO NEON CAVEIRA 30X10GR /CX",
     "16072 PIRULITO DIPLOKO NEON CITRUS 30X10GR /CX",
     "16078 PIRULITO DIPLOKO NEON MONSTERS OLHO 30X10GR /CX",
     "19365 PIRULITO DIPLOKO NEON UNICORNIO 30X10GR /CX",
-    "2025 PIRULITO DIPLOKO SALADA FRUTA 1X15UN/CX",
+    "02025 PIRULITO DIPLOKO SALADA FRUTA 1X15UN/CX",
     "19703 PIRULITO DIPLOKO TORRE LOLLIPOP COGUMELO 60X15GR/DP",
     "19705 PIRULITO DIPLOKO TORRE LOLLIPOP CUBO 60X15GR/DP",
     "19707 PIRULITO DIPLOKO TORRE LOLLIPOP DONUTS 60X15GR/DP",
@@ -1008,7 +1008,7 @@ let Pagina23 = [
     "16480 SHAMPOO DARLING 350ML TILIA/6",
     "00507 SODA CAUSTICA INDAIA POTE 1KG 1X12 /CX",
     "11795 SUCO DAFLORA ABACAXI C/ HORTELA 12X390ML/FD",
-    "1954 SUCO DAFLORA FRUTAS CITRICAS 12X390ML /FD",
+    "01954 SUCO DAFLORA FRUTAS CITRICAS 12X390ML /FD",
     "16276 SUCO DAFLORA FRUTAS CITRICAS 6X1500ML/FD",
 ];
 
@@ -1226,19 +1226,3 @@ function gerarCatalogo(pagina){
     }
     get('inicioCatalogo'+pagina).style.display='none';
 }
-
-/*
-for(let i =19; i <= 24; i++){
-    let pagina = definirPagina(i);
-    for (let j = 0; j < pagina.length; j++) {
-        let produto = pagina[j];
-        get('teste').innerHTML += `
-            <li>
-                <img src="../Assets/Produtos/P${i}/p${j}.jpg" alt="produto">
-                <h3>${produto.slice(6)}</h3>
-                <span>${produto.slice(0, 5)}</span>
-            </li>
-        `;
-    }
-}
-*/
