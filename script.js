@@ -1158,6 +1158,8 @@ function definirPagina(numero) {
 }
 
 //Funções principais
+
+//Gera o catalogo na lista de imprimir
 function gerarCatalogo(pagina){
     switch(pagina){
         case 1:
@@ -1225,6 +1227,31 @@ function gerarCatalogo(pagina){
             break;
     }
     get('inicioCatalogo'+pagina).style.display='none';
+}
+
+let pag = 1;
+//Avança na lista principal
+function interagirPag(direcao){
+    if((direcao == 1) && pag != 24){
+        pag++;
+    }
+    if((direcao == 2) && pag != 1){
+        pag--;
+    }
+    get('numeroPag').innerHTML="Página "+pag+"/24";
+    get('numeroPag2').innerHTML="Página "+pag+"/24";
+    get('listagem').innerHTML="";
+    let pagina = definirPagina(pag);
+    for (let j = 0; j < pagina.length; j++) {
+        let produto = pagina[j];
+        get('listagem').innerHTML += `
+            <li>
+                <img src="Assets/Produtos/P${pag}/p${j}.jpg" alt="produto">
+                <h3>${produto.slice(6)}</h3>
+                <span>${produto.slice(0, 5)}</span>
+            </li>
+        `;
+    }
 }
 
 //Script geral

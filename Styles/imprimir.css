@@ -39,7 +39,6 @@
 .listaImprimir li i{
     color: var(--cor2);
 }
-
 .inicioCatalogo{
     width: 100%;
     display: flex;
