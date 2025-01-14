@@ -1,6 +1,8 @@
 /*Estilos importados*/
 @import url('Styles/imprimir.css');
 @import url('Styles/header.css');
+@import url('Styles/main.css');
+@import url('Styles/footer.css');
 
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
@@ -8,7 +10,7 @@
 
 /*Variáveis*/
 :root{
-    --cor1: #e6e6e6;
+    --cor1: #d1d1d1;
     --cor2: #ee2929;
     --cor3: #ffffff;
     --fontPadrao: "Rubik", serif;

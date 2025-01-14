@@ -1226,3 +1226,16 @@ function gerarCatalogo(pagina){
     }
     get('inicioCatalogo'+pagina).style.display='none';
 }
+
+//Script geral
+
+for (let j = 0; j < Pagina1.length; j++) {
+    let produto = Pagina1[j];
+    get('listagem').innerHTML += `
+        <li>
+            <img src="Assets/Produtos/P1/p${j}.jpg" alt="produto">
+            <h3>${produto.slice(6)}</h3>
+            <span>${produto.slice(0, 5)}</span>
+        </li>
+    `;
+}
