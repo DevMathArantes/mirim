@@ -1,20 +1,19 @@
 /*Estilos importados*/
-@import url('Styles/imprimir.css');
 @import url('Styles/header.css');
 @import url('Styles/main.css');
 @import url('Styles/footer.css');
 
 /*Fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /*Variáveis*/
 :root{
-    --cor1: #d1d1d1;
+    --cor1: #757575;
     --cor2: #ee2929;
     --cor3: #ffffff;
-    --fontPadrao: "Rubik", serif;
-    --fontTitulo: "Ubuntu", serif;
+    --fontPadrao: "Karla", serif;
+    --fontTitulo: "Rubik", serif;
 }
 
 /*Regras*/
@@ -41,10 +40,4 @@ p, label{
 }
 span{
     font-family: var(--fontTitulo);
-}
-
-
-/*Curingas*/
-.abrirLista:checked ~ .listaEscondida{
-    display: flex;
 }

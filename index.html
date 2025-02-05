@@ -12,72 +12,42 @@
     <!--Nav superior da tela-->
     <header>
 
-        <!--Opções-->
-        <nav>
+        <div class="imgEntrada"></div>
 
-            <!--Imprimir-->
-            <input type="checkbox" id="imprimir" class="abrirLista">
-            <label  for="imprimir">
-                <img src="Assets/Icones/imprimir.png" alt="icone imprimir">
-                Imprimir
-            </label>
+        <!--Titulo principal-->
+        <h1>MIRIM</h1>
 
-            <!--Lista escondida-->
-            <ul class="listaEscondida">
-                <li>
-                    <a href="Pages/pag1a6.html">
-                        <img src="Assets/Icones/catalogo.png" alt="icone catalogo"> Catálogo 1-6
-                    </a>
-                </li>
-                <li>
-                    <a href="Pages/pag7a12.html">
-                        <img src="Assets/Icones/catalogo.png" alt="icone catalogo"> Catálogo 7-12
-                    </a>
-                </li>
-                <li>
-                    <a href="Pages/pag13a18.html">
-                        <img src="Assets/Icones/catalogo.png" alt="icone catalogo"> Catálogo 13-18
-                    </a>
-                </li>
-                <li>
-                    <a href="Pages/pag19a24.html">
-                        <img src="Assets/Icones/catalogo.png" alt="icone catalogo"> Catálogo 19-24
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <!--Logo-->
-        <img src="Assets/Imagens/logo.jpg" alt="logo atacado mirim">
-    
     </header>
-
-    <!--Pulando a nav-->
-    <br><br><br>
 
     <!--Conteúdo principal-->
     <main>
-        
-        <!--Titulo principal-->
-        <h1><span>ATACADO</span>MIRIM</h1>
-        
+
+        <!--Recepção-->
+        <h2>Seu atacado completo</h2>
+        <p>Encontre tudo o que precisa, com a variedade que você procura e a conveniência que você merece</p>
+
         <!--Controles inicio da lista-->
-        <section>
+        <section class="mudarPag">
             <img onclick="interagirPag(2)" src="Assets/Icones/setaEsquerda.png" alt="seta esquerda">
             <span id="numeroPag">Página 1/24</span>
             <img onclick="interagirPag(1)" src="Assets/Icones/setaDireita.png" alt="seta direita">
         </section>
 
         <!--Lista principal-->
-        <ul id="listagem" class="listaImprimir"></ul>
+        <ul id="listagem" class="lista"></ul>
 
         <!--Controles final da lista-->
-        <section>
+        <section class="mudarPag">
             <img onclick="interagirPag(2)" src="Assets/Icones/setaEsquerda.png" alt="seta esquerda">
             <span id="numeroPag2">Página 1/24</span>
             <img onclick="interagirPag(1)" src="Assets/Icones/setaDireita.png" alt="seta direita">
         </section>
+
+        <!--Baixar catálogo completo-->
+        <a href="Assets/Imagens/catalogo30012025.pdf">
+            <img src="Assets/Icones/baixar.png" alt="icone baixar">
+            Catálogo completo
+        </a>
 
     </main>
 
