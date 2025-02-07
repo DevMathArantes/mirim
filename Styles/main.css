@@ -30,7 +30,7 @@ main{
     display: flex;
     flex-flow: row wrap;
     gap: 1em;
-    justify-content: left;
+    justify-content: space-around;
     padding: 1em;
 }
 .produtos li{
