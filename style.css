@@ -12,6 +12,8 @@
     --cor1: #757575;
     --cor2: #ee2929;
     --cor3: #ffffff;
+    --cor4: #d12525;
+    --cor5: #f8f8f8;
     --fontPadrao: "Karla", serif;
     --fontTitulo: "Rubik", serif;
 }
@@ -22,6 +24,7 @@
 }
 body{
     margin: 0;
+    background-color: var(--cor5);
 }
 ul{
     margin: 0;
@@ -35,7 +38,7 @@ a{
     font-family: var(--fontTitulo);
     text-decoration: none;
 }
-p, label{
+p, label, li{
     font-family: var(--fontPadrao);
 }
 span{

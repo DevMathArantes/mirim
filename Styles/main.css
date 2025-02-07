@@ -1,69 +1,58 @@
 /*Main*/
 main{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1em;
-    padding-bottom: 2em;
+    flex-flow: row wrap;
+    padding: 2em 0;
 }
-main p, main h2{
-    text-align: center;
-    margin: 1em 0 0 0;
-    padding: 0.5em;
+
+/*Catálogo*/
+.catalogo{
+    width: 100%;
+    position: relative;
 }
-main h2{
-    color: var(--cor2);
-    border-radius: 10px;
-    border: 1px solid var(--cor2);
-    width: 16em;
-}
-main a{
+.menu{
+    display: flex;
+    overflow: auto;
     background-color: var(--cor2);
     color: var(--cor3);
-    padding: 1em 2em;
-    border-radius: 10px;
-    box-shadow: 0px 5px 5px var(--cor1);
-    display: flex;
-    align-items: center;
-    gap: 1em;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 5px 10px var(--cor1);
 }
-main a img{
-    width: 1.5em;
+.menu li{
+    border-bottom: 1px solid var(--cor4);
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
 }
-
-/*Section dos botões para navegar nas páginas*/
-.mudarPag{
-    margin: 1em 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5em;
-}
-.mudarPag img{
-    width: 2em;
-}
-
-/*Lista principal*/
-.lista{
+.produtos{
     display: flex;
     flex-flow: row wrap;
-    text-align: center;
-    justify-content: center;
     gap: 1em;
-}
-.lista li{
+    justify-content: left;
     padding: 1em;
+}
+.produtos li{
     width: 8em;
-    box-shadow: 0px 2px 5px var(--cor1);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor3);
+    box-shadow: 0px 5px 10px var(--cor1);
+    border-radius: 5px;
+    height: 15em;
+    padding: 1em;
+    justify-content: space-around;
 }
-.lista li img{
-    width: 6em;
-    height: 6em;
+.produtos li h3{
+    font-size: 0.6rem;
+    text-align: center;
 }
-.lista li h3{
-    font-size: 0.7rem;
-}
-.lista li span{
+.produtos li span{
     color: var(--cor2);
-    font-weight: 600;
+    font-weight: 700;
+}
+.produtos li img{
+    width: 7em;
 }

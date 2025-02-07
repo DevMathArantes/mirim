@@ -11,53 +11,38 @@
 
     <!--Nav superior da tela-->
     <header>
-
         <div class="imgEntrada"></div>
-
-        <!--Titulo principal-->
         <h1>MIRIM</h1>
-
     </header>
 
     <!--Conteúdo principal-->
     <main>
-
-        <!--Recepção-->
-        <h2>Seu atacado completo</h2>
-        <p>Encontre tudo o que precisa, com a variedade que você procura e a conveniência que você merece</p>
-
-        <!--Controles inicio da lista-->
-        <section class="mudarPag">
-            <img onclick="interagirPag(2)" src="Assets/Icones/setaEsquerda.png" alt="seta esquerda">
-            <span id="numeroPag">Página 1/24</span>
-            <img onclick="interagirPag(1)" src="Assets/Icones/setaDireita.png" alt="seta direita">
+        <section class="catalogo" id="catalogo">
+            <ul class="menu" id="menu">
+                <li onclick="interagirCatalogo(0)">Diversos</li>
+                <li onclick="interagirCatalogo(1)">Cozinha</li>
+                <li onclick="interagirCatalogo(2)">Petiscos</li>
+                <li onclick="interagirCatalogo(3)">Sabores</li>
+                <li onclick="interagirCatalogo(4)">Higiene</li>
+                <li onclick="interagirCatalogo(5)">Casa</li>
+                <li onclick="interagirCatalogo(6)">Doces</li>
+                <li onclick="interagirCatalogo(7)">Chocolates</li>
+                <li onclick="interagirCatalogo(8)">Refrescos</li>
+                <li onclick="interagirCatalogo(9)">Bebidas</li>
+                <li onclick="interagirCatalogo(10)">Refrigerantes</li>
+            </ul>
+            <ul class="produtos" id="produtos"></ul>
         </section>
-
-        <!--Lista principal-->
-        <ul id="listagem" class="lista"></ul>
-
-        <!--Controles final da lista-->
-        <section class="mudarPag">
-            <img onclick="interagirPag(2)" src="Assets/Icones/setaEsquerda.png" alt="seta esquerda">
-            <span id="numeroPag2">Página 1/24</span>
-            <img onclick="interagirPag(1)" src="Assets/Icones/setaDireita.png" alt="seta direita">
-        </section>
-
-        <!--Baixar catálogo completo-->
-        <a href="Assets/Imagens/catalogo30012025.pdf">
-            <img src="Assets/Icones/baixar.png" alt="icone baixar">
-            Catálogo completo
-        </a>
-
+        
     </main>
-
+    
     <!--Propaganda MAF-->
     <footer>
         <h3>Developed by Matheus Arantes Ferreira</h3>
         <h2>MAF</h2>
         <a href="https://matheusarantesferreira.com.br/">
             Acesse nosso site 
-            <img src="Assets/Icones/link.png" alt="icone link">
+            <img src="Assets/Icons/link.png" alt="icone link">
         </a>
     </footer>
 

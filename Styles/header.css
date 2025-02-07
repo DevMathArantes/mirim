@@ -2,7 +2,7 @@
 .imgEntrada{
     width: 100%;
     height: 10em;
-    background-image: url(../Assets/Imagens/doces.jpg);
+    background-image: url(../Assets/Images/doces.jpg);
     background-size: 100%;
     border-bottom: 4px solid var(--cor2);
 }
