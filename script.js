@@ -1050,4 +1050,4 @@ function interagirCatalogo(categoria){
 //Script geral
 
 //Carrregando inicio do catálogo
-interagirCatalogo(5);
+interagirCatalogo(1);
