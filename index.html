@@ -3,38 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Mirim</title>
+    <title>Mirim</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="web icon" href="Assets/Imagens/logoMaior.jpg">
+    <link rel="web icon" href="Assets/Images/logo2.jpg">
 </head>
 <body>
 
     <!--Nav superior da tela-->
     <header>
-        <div class="imgEntrada"></div>
-        <h1>MIRIM</h1>
+
+        <section class="imgEntrada">
+
+            <div class="logo">
+                <img src="Assets/Images/logo2.jpg" alt="icone logo secundária">
+                <span>ATACADO MIRIM</span>
+            </div>
+            <h2>Qualidade que você confia, preço que você ama.</h2>
+            
+            <a href="Pages/geral.html" class="geral">Visão Simplificada</a>
+
+        </section>
+        
     </header>
 
     <!--Conteúdo principal-->
     <main>
-        <section class="catalogo" id="catalogo">
-            <ul class="menu" id="menu">
-                <li onclick="interagirCatalogo(0)">Diversos</li>
-                <li onclick="interagirCatalogo(1)">Cozinha</li>
-                <li onclick="interagirCatalogo(2)">Petiscos</li>
-                <li onclick="interagirCatalogo(3)">Sabores</li>
-                <li onclick="interagirCatalogo(4)">Higiene</li>
-                <li onclick="interagirCatalogo(5)">Casa</li>
-                <li onclick="interagirCatalogo(6)">Doces</li>
-                <li onclick="interagirCatalogo(7)">Chocolates</li>
-                <li onclick="interagirCatalogo(8)">Refrescos</li>
-                <li onclick="interagirCatalogo(9)">Bebidas</li>
-                <li onclick="interagirCatalogo(10)">Refrigerantes</li>
-            </ul>
-            <ul class="produtos" id="produtos"></ul>
+
+        <!--Produtos de cozinha-->
+        <h2>Descubra Novos Sabores</h2>
+        <section class="prateleira cozinha">
+            <h2>COZINHA</h2>
+            <div class="produtosPrateleira" id="produtosCozinha"></div>
+        </section>
+
+        <!--Produtos doces-->
+        <h2>Não deixe a felicidade para depois</h2>
+        <section class="categorias">
+            
+            <div class="categoriaPainel">
+                <img src="Assets/Images/doces.jpg" alt="imagem de doces">
+                <h3>Doces</h3>
+                <p>Um sabor para cada sorriso.</p>
+                <a href="Pages/doces.html">Ver mais</a>
+            </div>
+
+            <div class="categoriaPainel">
+                <img src="Assets/Images/chocolates.jpg" alt="imagem de chocolates">
+                <h3>Chocolates</h3>
+                <p>O sabor que derrete na boca.</p>
+                <a href="Pages/chocolates.html">Ver mais</a>
+            </div>
+
+            <div class="categoriaPainel">
+                <img src="Assets/Images/petiscos.jpg" alt="imagem de petiscos">
+                <h3>Petiscos</h3>
+                <p>Aproveite cada momento</p>
+                <a href="Pages/petiscos.html">Ver mais</a>
+            </div>
+
+        </section>
+
+        <!--Produtos refrigerantes-->
+        <h2>Um brinde aos bons momentos.</h2>
+        <section class="prateleira refrigerantes">
+            <h2>Refrigerantes</h2>
+            <div class="produtosPrateleira" id="produtosRefrigerantes"></div>
+        </section>
+
+        <!--Produtos de limpeza-->
+        <h2>Lar doce lar</h2>
+        <section class="categorias">
+            <div class="categoriaPainel">
+                <img src="Assets/Images/higiene.jpg" alt="imagem sobre higiene">
+                <h3>Higiene</h3>
+                <p>Cultive bons hábitos.</p>
+                <a href="Pages/higiene.html">Ver mais</a>
+            </div>
+            <div class="categoriaPainel">
+                <img src="Assets/Images/casaHigiene.png" alt="imagem de limpeza e casa">
+                <h3>Lar</h3>
+                <p>Mantenha sua casa limpa, cultive seu bem-estar: um ambiente organizado para uma mente tranquila.</p>
+            </div>
+            <div class="categoriaPainel">
+                <img src="Assets/Images/limpeza.jpg" alt="imagem de limpeza">
+                <h3>Casa</h3>
+                <p>Limpeza que transforma</p>
+                <a href="Pages/casa.html">Ver mais</a>
+            </div>
+        </section>
+
+        <!--Temperos-->
+        <h2>Cozinhar é arte, temperar é poesia.</h2>
+        <section class="categoria">
+            <img src="Assets/Images/sabores.jpg" alt="imagem de temperos">
+            <div class="categoriaInfo">
+                <h3>Sabores</h3>
+                <p>Do campo para sua mesa, a essência do sabor em cada tempero.</p>
+                <a href="Pages/sabores.html">Ver mais</a>
+            </div>
         </section>
         
-    </main>
+        <!--Bebidas-->
+        <h2>Brinde aos bons momentos</h2>
+        <section class="categorias">
+            <div class="categoriaPainel">
+                <img src="Assets/Images/bebidas.jpg" alt="imagem de bebidas">
+                <h3>Bebidas</h3>
+                <p>Encontre a bebida perfeita para cada ocasião.</p>
+                <a href="Pages/bebidas.html">Ver mais</a>
+            </div>
+            <div class="categoriaPainel">
+                <img src="Assets/Images/proibido.png" alt="imagem de proibido para menores">
+                <h3>Lembrete</h3>
+                <p>Bebidas alcoolizadas não devem ser disponibilizadas em hipótese alguma para menores de 18 anos.</p>
+            </div>
+            <div class="categoriaPainel">
+                <img src="Assets/Images/refrescos.jpg" alt="imagem de refrescos">
+                <h3>Refrescos</h3>
+                <p>Aproveite a vida com mais leveza</p>
+                <a href="Pages/refrescos.html">Ver mais</a>
+            </div>
+        </section>
+
+        <!--Diversos-->
+        <h2>Perfeito para qualquer ocasião.</h2>
+        <section class="categoria">
+            <img src="Assets/Images/diversos.jpg" alt="imagem de temperos">
+            <div class="categoriaInfo">
+                <h3>Diversos</h3>
+                <p>Estamos focados em servir além do que você procura.</p>
+                <a href="Pages/diversos.html">Ver mais</a>
+            </div>
+        </section>
+
+    </main><br><br><br>
     
     <!--Propaganda MAF-->
     <footer>

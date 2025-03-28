@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirim</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="web icon" href="../Assets/Images/logo2.jpg">
+</head>
+<body>
+
+    <!--Nav superior da tela-->
+    <header>
+
+        <section class="imgEntrada">
+
+            <div class="logo">
+                <img src="/Assets/Images/logo2.jpg" alt="icone logo secundária">
+                <span>ATACADO MIRIM</span>
+            </div>
+            <h2>Qualidade que você confia, preço que você ama.</h2>
+            
+            <a href="../index.html" class="voltar">Voltar</a>
+
+        </section>
+        
+    </header>
+
+    <!--Conteúdo principal-->
+    <main class="catalogo">
+
+        <section class="produtos" id="listaAtual"></section>
+
+        <ul class="menu">
+            <li onclick="interagirCatalogo(0, 'listaAtual')">
+                <img src="../Assets/Icons/cozinha.png" alt="icone cozinha">
+                <span>Cozinha</span>
+            </li>
+            <li onclick="interagirCatalogo(1, 'listaAtual')">
+                <img src="../Assets/Icons/doces.png" alt="icone doces">
+                <span>Doces</span>
+            </li>
+            <li onclick="interagirCatalogo(2, 'listaAtual')">
+                <img src="../Assets/Icons/chocolates.png" alt="icone chocolates">
+                <span>Chocolates</span>
+            </li>
+            <li onclick="interagirCatalogo(3, 'listaAtual')">
+                <img src="../Assets/Icons/petiscos.png" alt="icone petiscos">
+                <span>Petiscos</span>
+            </li>
+            <li onclick="interagirCatalogo(4, 'listaAtual')">
+                <img src="../Assets/Icons/refrigerantes.png" alt="icone refrigerantes">
+                <span>Refrigerantes</span>
+            </li>
+            <li onclick="interagirCatalogo(5, 'listaAtual')">
+                <img src="../Assets/Icons/higiene.png" alt="icone higiene">
+                <span>Higiene</span>
+            </li>
+            <li onclick="interagirCatalogo(6, 'listaAtual')">
+                <img src="../Assets/Icons/casa.png" alt="icone casa">
+                <span>Casa</span>
+            </li>
+            <li onclick="interagirCatalogo(7, 'listaAtual')">
+                <img src="../Assets/Icons/sabores.png" alt="icone sabores">
+                <span>Sabores</span>
+            </li>
+            <li onclick="interagirCatalogo(8, 'listaAtual')">
+                <img src="../Assets/Icons/bebidas.png" alt="icone bebidas">
+                <span>Bebidas</span>
+            </li>
+            <li onclick="interagirCatalogo(9, 'listaAtual')">
+                <img src="../Assets/Icons/refrescos.png" alt="icone refrescos">
+                <span>Refrescos</span>
+            </li>
+            <li onclick="interagirCatalogo(10, 'listaAtual')">
+                <img src="../Assets/Icons/diversos.png" alt="icone diversos">
+                <span>Diversos</span>
+            </li>
+        </ul>
+
+    </main>
+    
+    <!--Propaganda MAF-->
+    <footer>
+        <h3>Developed by Matheus Arantes Ferreira</h3>
+        <h2>MAF</h2>
+        <a href="https://matheusarantesferreira.com.br/">
+            Acesse nosso site 
+            <img src="../Assets/Icons/link.png" alt="icone link">
+        </a>
+    </footer>
+
+    <script src="../Scripts/geral.js"></script>
+</body>
+</html>

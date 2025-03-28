@@ -1,6 +1,6 @@
 footer{
-    background-color: var(--cor2);
-    color: var(--cor3);
+    background-color: var(--c3);
+    color: var(--c1);
     padding: 2em 1em;
     text-align: center;
     display: flex;
@@ -11,12 +11,12 @@ footer h3{
     font-size: 0.7rem;
 }
 footer h2{
-    border: 2px solid var(--cor3);
+    border: 2px solid var(--c1);
     border-radius: 5px;
     width: 10em;
 }
 footer a{
-    color: var(--cor3);
+    color: var(--c1);
     display: flex;
     align-items: center;
     gap: 0.5em;

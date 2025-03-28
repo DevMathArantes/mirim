@@ -2,6 +2,7 @@
 @import url('Styles/header.css');
 @import url('Styles/main.css');
 @import url('Styles/footer.css');
+@import url('Styles/universais.css');
 
 /*Fontes*/
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
@@ -9,13 +10,14 @@
 
 /*Variáveis*/
 :root{
-    --cor1: #757575;
-    --cor2: #ee2929;
-    --cor3: #ffffff;
-    --cor4: #d12525;
-    --cor5: #f8f8f8;
     --fontPadrao: "Karla", serif;
     --fontTitulo: "Rubik", serif;
+    --c1: #ffffff;
+    --c2: #000000;
+    --c3: #e40000;
+    --c4: #1b1b1b85;
+    --c5: #fffdfd;
+    --c6: #6e0e0e;
 }
 
 /*Regras*/
@@ -24,7 +26,7 @@
 }
 body{
     margin: 0;
-    background-color: var(--cor5);
+    background-color: var(--c5);
 }
 ul{
     margin: 0;

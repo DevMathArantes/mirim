@@ -1,10 +1,34 @@
 /*Imagem de entrada da página*/
 .imgEntrada{
     width: 100%;
-    height: 10em;
-    background-image: url(../Assets/Images/doces.jpg);
-    background-size: 100%;
-    border-bottom: 4px solid var(--cor2);
+    height: 30em;
+    background-image: url(../Assets/Images/prateleiras.jpg);
+    background-size: cover;
+    background-position: right;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--c1);
+}
+.imgEntrada h2{
+    text-shadow: 0px 0px 10px var(--c2);
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    padding-right: 2em;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+}
+.logo img{
+    width: 100%;
+}
+.logo span{
+    width: 100%;
+    font-size: 0.65rem;
+    text-align: center;
 }
 
 /*Header*/
@@ -20,4 +44,52 @@ header h1{
     text-align: center;
     color: var(--cor2);
     font-size: 3rem;
+}
+
+/*Botão voltar*/
+.voltar{
+    width: 10em;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: var(--c1);
+    border: 2px solid var(--c1);
+    width: 15em;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--fontTitulo);
+    background-image: url(../Assets/Icons/voltar.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 3em;
+    text-align: center;
+}
+.voltar:hover{
+    background-color: var(--c3);
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Botão geral*/
+.geral{
+    width: 10em;
+    padding: 1em 2em;
+    background-color: transparent;
+    color: var(--c1);
+    border: 2px solid var(--c1);
+    width: 15em;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: var(--fontTitulo);
+    background-image: url(../Assets/Icons/olho.png);
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: 1em;
+    text-align: center;
+}
+.geral:hover{
+    background-color: var(--c3);
+    transition: 1s;
+    cursor: pointer;
+    text-decoration: underline;
 }
