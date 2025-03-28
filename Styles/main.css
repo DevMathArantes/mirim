@@ -54,6 +54,7 @@ main h2{
 
 @media screen and (max-width: 724px){
 
+    /*Transforma o menu em icones*/
     .menu{
         width: 5em;
     }
